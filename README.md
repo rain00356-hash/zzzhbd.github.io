@@ -1,28 +1,4 @@
 
-[pmp.html](https://github.com/user-attachments/files/24227373/pmp.html)
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<title>198屆PMP導讀</title>
-<style>
-  body { margin:0; font-family:"Segoe UI", Arial, sans-serif; background:#f0f4f8; color:#1f2937; }
-  .hero { height:100vh; background: linear-gradient(135deg,#7c3aed,#06b6d4); display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; text-align:center; }
-  .hero h1 { font-size:48px; margin-bottom:20px; }
-  .hero button { background:white; color:#7c3aed; border:none; padding:14px 32px; font-size:16px; border-radius:999px; cursor:pointer; font-weight:bold; transition:0.3s; }
-  .hero button:hover { transform:translateY(-3px); box-shadow:0 12px 25px rgba(0,0,0,0.25); }
-
-  main { max-width:1000px; margin:40px auto; padding:0 20px; display:none; }
-  .card { background:white; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 12px 30px rgba(0,0,0,0.08); }
-  .card h2 { cursor:pointer; color:#7c3aed; }
-  .content { display:none; margin-top:15px; line-height:1.6; }
-  .highlight { background:#eef2ff; border-left:6px solid #7c3aed; padding:16px 20px; margin:15px 0; border-radius:10px; font-weight:bold; }
-  .quote { background:#f1f5f9; padding:20px; border-radius:12px; font-style:italic; margin:15px 0; }
-  footer { text-align:center; color:#64748b; padding:40px 20px; }
-</style>
-</head>
-<body>
-
 <!-- 首頁主視覺 -->
 <div class="hero" id="home">
   <h1>198 屆 PMP 導讀</h1>
