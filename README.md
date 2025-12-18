@@ -1,0 +1,102 @@
+[pmp.html](https://github.com/user-attachments/files/24227905/pmp.html)
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>198屆PMP導讀</title>
+<style>
+  body { margin:0; font-family:"Segoe UI", Arial, sans-serif; background:#f0f4f8; color:#1f2937; }
+  .hero { height:100vh; background: linear-gradient(135deg,#7c3aed,#06b6d4); display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; text-align:center; }
+  .hero h1 { font-size:48px; margin-bottom:20px; }
+  .hero button { background:white; color:#7c3aed; border:none; padding:14px 32px; font-size:16px; border-radius:999px; cursor:pointer; font-weight:bold; transition:0.3s; }
+  .hero button:hover { transform:translateY(-3px); box-shadow:0 12px 25px rgba(0,0,0,0.25); }
+
+  main { max-width:1000px; margin:40px auto; padding:0 20px; display:none; }
+  .card { background:white; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 12px 30px rgba(0,0,0,0.08); }
+  .card h2 { cursor:pointer; color:#7c3aed; }
+  .content { display:none; margin-top:15px; line-height:1.6; }
+  .highlight { background:#eef2ff; border-left:6px solid #7c3aed; padding:16px 20px; margin:15px 0; border-radius:10px; font-weight:bold; }
+  .quote { background:#f1f5f9; padding:20px; border-radius:12px; font-style:italic; margin:15px 0; }
+  footer { text-align:center; color:#64748b; padding:40px 20px; }
+</style>
+</head>
+<body>
+
+<!-- 首頁主視覺 -->
+<div class="hero" id="home">
+  <h1>198 屆 PMP 導讀</h1>
+  <button onclick="startGuide()">開始導讀</button>
+</div>
+
+<!-- 導讀內容 -->
+<main id="guide">
+
+  <div class="card">
+    <h2 onclick="toggleContent(this)">領導力 vs 管理</h2>
+    <div class="content">
+      <p><strong>領導力</strong>：透過討論與想法交流來引導團隊。</p>
+      <p><strong>管理</strong>：使用一組規定的行為來指導行動。</p>
+      <div class="highlight">領導關注「人與方向」，管理關注「規則與流程」。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 onclick="toggleContent(this)">僕人式領導 (1.2.3)</h2>
+    <div class="content">
+      <p>核心不是「我怎麼管人」，而是<strong>「我怎麼讓團隊更容易成功」</strong>。</p>
+      <ul>
+        <li>促進而非管理 → 事情更順，不是管得更緊</li>
+        <li>提供輔導與培訓 → 提前協助成長</li>
+        <li>消除工作障礙 → 領導者是擋風的人，不是加壓的人</li>
+        <li>專注於成就 → 成功歸功於團隊</li>
+        <li>鼓勵每個人成為僕人式領導 → 行為而非職稱</li>
+      </ul>
+      <div class="highlight">僕人式領導不是把權力放下，而是把力量放到團隊身上。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 onclick="toggleContent(this)">領導風格五種類型 (1.2.4)</h2>
+    <div class="content">
+      <ul>
+        <li>直接型：我說了算，你照做</li>
+        <li>諮詢型：一起討論，再做決定</li>
+        <li>僕人式：方向給你，怎麼做你決定</li>
+        <li>共識/協作型：一起決定，一起負責</li>
+        <li>情境型：沒有最好，只有最適合</li>
+      </ul>
+      <div class="highlight">領導力需依對象、情境切換模式。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 onclick="toggleContent(this)">虛擬團隊參與與支援 (1.11)</h2>
+    <div class="content">
+      <p>虛擬團隊挑戰：<strong>人之間的連結感</strong>。</p>
+      <ul>
+        <li>管理孤立感 → 主動關心與互動</li>
+        <li>聚焦團隊成果 → 我們一起完成了什麼</li>
+        <li>建立共同承諾 → 不在同地，但在同一條船上</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer>198 屆 PMP 導讀 - by 芳芳</footer>
+
+<script>
+  function startGuide() {
+    document.getElementById('home').style.display='none';
+    document.getElementById('guide').style.display='block';
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  function toggleContent(el) {
+    const content = el.nextElementSibling;
+    content.style.display = (content.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
